@@ -1,0 +1,9 @@
+h1{
+    color:pink;
+    font-family: 'Georgia'; 
+}
+img{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
