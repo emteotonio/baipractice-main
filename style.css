@@ -1,9 +1,43 @@
-h1{
-    color:pink;
+body{
+    background-color: #f9efdc;
     font-family: 'Georgia'; 
+    padding-left: 5%;
+    padding-right: 5%;
 }
-img{
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
+
+h1{
+    color:#F06292; 
+    margin-top: 7%;
+}
+
+#bio{
+    max-width: 750px;
+}
+
+h2{
+    padding-top: 5%;
+}
+
+/* slider */
+input[type="range"] {
+  width: 200px;
+  margin-left: 2%;
+}
+
+#flowerRecommendation {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff9ed;
+  border: 2px solid #F06292;
+  border-radius: 5px;
+  max-width:700px;
+  max-height: 800px;
+  color: #F06292;
+}
+
+.slider-value {
+  display: inline-block;
+  margin-left: 2%;
+  font-weight: bold;
+  color:#F06292;
 }

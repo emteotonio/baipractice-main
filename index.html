@@ -6,18 +6,39 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
   </head>
+  
   <body>
     <h1> What Flower is Perfect for your Personality?</h1>
-    <p> Are you tired of roses and tulips? Here are flowers perfect for your personality type to diversify your floral vases. Or, give the gift of perfect and unique flowers for your lover or friend. 
-  
-      <h2 id="calla-lilly-section">For the Stylish Modern Person</h2> 
-        <img src="images\calla-lily-romantic-mix-vis-1.jpg" alt="calla-lily">
-          <p> Associated with elegant and grace, the Calla Lily is perfect. It's a sleek flower that provides a modern and sophisticated touch. There is also a large range of colors to choose from! </p>
-      <h2 id="peony-section">For the Energetic and Passionate Person</h2> 
-        <img src="images\peony.jpg" alt="peony">
-          <p> A delicate flower that only blooms in the spring, it symbolizes happiness and celebration. Perfect for those who enjoy living in the moment and making the most of life. If you're a person who values emotion and supporting your friends this flower will resonate with you.</p>
-      <h2 id="iris-section">For the Artists and Creatives </h2> 
-        <img src="images\iris.jpg" alt="iris">
-          <p> This flower has a unique and creative design, perfect for inspiring your artistic side. Symbolizing hope and new beginnings, the iris is sure to help you avoid your artist block. </p>
-  </body>
+      <p id="bio"> Are you tired of getting the same old flowers? Take this quiz to find out what flower you should buy based on your personality! </p> 
+
+    <h2>How would you describe yourself?</h2>
+      <p>Adventurous: 
+        <input type="range" id="adventurous" min="0" max="5" value="0">
+        <span class="slider-value" id="adventurousValue">0</span>
+      </p>
+    
+      <p>Optimistic: 
+        <input type="range" id="optimistic" min="0" max="5" value="0">
+        <span class="slider-value" id="optimisticValue">0</span>
+      </p>
+    
+      <p>Creative: 
+        <input type="range" id="creative" min="0" max="5" value="0">
+        <span class="slider-value" id="creativeValue">0</span>
+      </p>
+
+      <p>Responsible: 
+        <input type="range" id="responsible" min="0" max="5" value="0">
+        <span class="slider-value" id="responsibleValue">0</span>
+      </p>
+
+      <p>Emotional: 
+        <input type="range" id="emotional" min="0" max="5" value="0">
+        <span class="slider-value" id="emotionalValue">0</span>
+      </p>
+      
+      <button onclick="recommendFlower()">Get My Flower</button>
+      <div id="flowerRecommendation"></div>
+    
+    </body>
 </html>
