@@ -5,34 +5,81 @@ body{
     padding-right: 5%;
 }
 
+/*header*/
 h1{
     color:#F06292; 
     margin-top: 7%;
+    text-align: center;
+
 }
 
 #bio{
-    max-width: 750px;
+    text-align: center;
+}
+
+/*quiz*/
+#slider{
+  flex-direction: column;
+  text-align: center; 
+  background-color: #FFE1EF;
+  padding: 2%;
+  border: 2px solid #F06292;
+  border-radius: 5px;
+  max-height: 300px;
+  min-width: 350px;
 }
 
 h2{
     padding-top: 5%;
 }
 
-/* slider */
-input[type="range"] {
-  width: 200px;
-  margin-left: 2%;
-}
-
 #flowerRecommendation {
-  margin-top: 20px;
   padding: 20px;
   background-color: #fff9ed;
   border: 2px solid #F06292;
   border-radius: 5px;
-  max-width:700px;
-  max-height: 800px;
+  max-width:400px;
   color: #F06292;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.flower{
+  width:100%; 
+
+}
+
+#flowerRecommendation .flower-description {
+  margin-top: 10px;
+  color: black;
+  justify-content: center;
+}
+
+button{
+  background-color: #fff9ed;
+  border: 2px solid #F06292;
+  border-radius: 5px;
+  min-width: 200px;
+  min-height: 30px;
+  font-size: 20px;
+  font-family: georgia;
+  font-weight: bold;
+  margin-top: 8%; 
+}
+
+
+#quiz{
+  margin-top: 5%;
+  display: flex;
+  column-gap: 5%;
+  justify-content: center;
+}
+
+/* slider */
+input[type="range"] {
+  width: 200px;
+  margin-left: 2%;
+
 }
 
 .slider-value {
@@ -40,4 +87,19 @@ input[type="range"] {
   margin-left: 2%;
   font-weight: bold;
   color:#F06292;
+}
+
+/*MOBILE*/
+@media (max-width: 925px) {
+  #quiz{
+      flex-direction: column;
+  }
+  #slider {
+      width: 100%;
+  }
+  #flowerRecommendation {
+      width: 100%;
+      margin-top: 5%;
+      max-width: 94%;
+  }
 }

@@ -22,14 +22,16 @@ function recommendFlower() {
     let flower = "";
     let image = "";
     let altText = "";
+    let description = "";
 
     const flowers = [
         {
           name: "Peony",
           image: "images/peony.jpg",
           altText: "A bouquet of pink peonies in a glass vase.",
+          description: "Peonies are known to symbolize romance, prosperity, and good fortune. They have short life spans, but they make the most of the moment, bringing a happy energy perfect for celebrating those good moments. This flower is perfect for those who live their life with a smile and spontaneously.",
           adventurousWeight: 4, 
-          optimisticWeight: 2,    
+          optimisticWeight: 3,    
           creativeWeight: 2,
           responsibleWeight: 1,
           emotionalWeight: 3     
@@ -88,6 +90,7 @@ function recommendFlower() {
             name: "Rose",
             image: "images/rose.avif",
             altText: "A bouqet of red roses flowers",
+
             adventurousWeight: 1,
             optimisticWeight: 2,
             creativeWeight: 1,
@@ -118,10 +121,7 @@ function recommendFlower() {
       const resultDiv = document.getElementById("flowerRecommendation");
       resultDiv.innerHTML = `
         <h3>Your Flower: ${bestFlower.name}</h3>
-        <img src="${bestFlower.image}" alt="${bestFlower.altText}" 
-            style=" width: 100%;
-                    max-width: 600px;
-                    height: 100%;
-                    max-height: 600px;">
+        <img src="${bestFlower.image}" alt="${bestFlower.altText}" class="flower">
+        <p class="flower-description">${bestFlower.description}</p>
       `;
   }

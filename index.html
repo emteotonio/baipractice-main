@@ -8,37 +8,42 @@
   </head>
   
   <body>
+    <div id="header">
     <h1> What Flower is Perfect for your Personality?</h1>
       <p id="bio"> Are you tired of getting the same old flowers? Take this quiz to find out what flower you should buy based on your personality! </p> 
+    </div>
 
-    <h2>How would you describe yourself?</h2>
-      <p>Adventurous: 
+    <div id="quiz">
+      <div id=slider>
+      <h2>How would you describe yourself?</h2>
+        <p>Adventurous: 
         <input type="range" id="adventurous" min="0" max="5" value="0">
         <span class="slider-value" id="adventurousValue">0</span>
-      </p>
+        </p>
     
-      <p>Optimistic: 
+        <p>Optimistic: 
         <input type="range" id="optimistic" min="0" max="5" value="0">
         <span class="slider-value" id="optimisticValue">0</span>
-      </p>
+        </p>
     
-      <p>Creative: 
+       <p>Creative: 
         <input type="range" id="creative" min="0" max="5" value="0">
         <span class="slider-value" id="creativeValue">0</span>
-      </p>
+        </p>
 
-      <p>Responsible: 
+        <p>Responsible: 
         <input type="range" id="responsible" min="0" max="5" value="0">
         <span class="slider-value" id="responsibleValue">0</span>
-      </p>
+       </p>
 
-      <p>Emotional: 
+       <p>Emotional: 
         <input type="range" id="emotional" min="0" max="5" value="0">
         <span class="slider-value" id="emotionalValue">0</span>
-      </p>
+        </p>
       
-      <button onclick="recommendFlower()">Get My Flower</button>
+      <button id="button" onclick="recommendFlower()">Get My Flower</button>
+      </div>
       <div id="flowerRecommendation"></div>
-    
+      </div>
     </body>
 </html>
