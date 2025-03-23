@@ -15,33 +15,36 @@
 
     <div id="quiz">
       <div id=slider>
-      <h2>How would you describe yourself?</h2>
-        <p>Adventurous: 
-        <input type="range" id="adventurous" min="0" max="5" value="0">
-        <span class="slider-value" id="adventurousValue">0</span>
-        </p>
-    
-        <p>Optimistic: 
-        <input type="range" id="optimistic" min="0" max="5" value="0">
-        <span class="slider-value" id="optimisticValue">0</span>
-        </p>
-    
-       <p>Creative: 
-        <input type="range" id="creative" min="0" max="5" value="0">
-        <span class="slider-value" id="creativeValue">0</span>
-        </p>
-
-        <p>Responsible: 
-        <input type="range" id="responsible" min="0" max="5" value="0">
-        <span class="slider-value" id="responsibleValue">0</span>
-       </p>
-
-       <p>Emotional: 
-        <input type="range" id="emotional" min="0" max="5" value="0">
-        <span class="slider-value" id="emotionalValue">0</span>
-        </p>
+        <h2>How would you describe yourself?</h2>
+          <p>Adventurous: 
+          <input type="range" id="adventurous" min="0" max="5" value="0">
+          <span class="slider-value" id="adventurousValue">0</span>
+          </p>
       
-      <button id="button" onclick="recommendFlower()">Get My Flower</button>
+          <p>Optimistic: 
+          <input type="range" id="optimistic" min="0" max="5" value="0">
+          <span class="slider-value" id="optimisticValue">0</span>
+          </p>
+      
+          <p>Creative: 
+          <input type="range" id="creative" min="0" max="5" value="0">
+          <span class="slider-value" id="creativeValue">0</span>
+          </p>
+
+          <p>Responsible: 
+          <input type="range" id="responsible" min="0" max="5" value="0">
+          <span class="slider-value" id="responsibleValue">0</span>
+          </p>
+
+          <p>Emotional: 
+          <input type="range" id="emotional" min="0" max="5" value="0">
+          <span class="slider-value" id="emotionalValue">0</span>
+          </p>
+        
+        <div class="button-container">
+          <button id="getFlowerButton" onclick="recommendFlower()">Get My Flower</button>
+          <button id="resetButton" onclick="resetQuiz()">Reset</button>
+        </div>
       </div>
       <div id="flowerRecommendation"></div>
      </div>

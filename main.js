@@ -131,3 +131,22 @@ function recommendFlower() {
         <p class="flower-description">${bestFlower.description}</p>
       `;
   }
+
+  function resetQuiz() {
+    // sliders
+    document.getElementById("adventurous").value = 0;
+    document.getElementById("optimistic").value = 0;
+    document.getElementById("creative").value = 0;
+    document.getElementById("responsible").value = 0;
+    document.getElementById("emotional").value = 0;
+
+    //numbers
+    document.getElementById("adventurousValue").textContent = 0;
+    document.getElementById("optimisticValue").textContent = 0;
+    document.getElementById("creativeValue").textContent = 0;
+    document.getElementById("responsibleValue").textContent = 0;
+    document.getElementById("emotionalValue").textContent = 0;
+
+    // clear
+    document.getElementById("flowerRecommendation").innerHTML = "";
+  }
