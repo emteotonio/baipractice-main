@@ -26,8 +26,8 @@ h1{
   padding: 2%;
   border: 2px solid #F06292;
   border-radius: 5px;
-  min-height:350px;
-  min-width: 350px;
+  height:425px;
+  width: 350px;
 }
  
 h2{
@@ -115,6 +115,7 @@ input[type="range"] {
   #slider {
       width: 100%;
       min-width:400px;
+      height: 100%;
   }
   #flowerRecommendation {
       width: 100%;
